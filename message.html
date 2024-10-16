@@ -36,7 +36,7 @@
         repo: 'https://zyleiver.com',  // 存储留言的 GitHub 仓库
         owner: 'Zyleiver',  // 你的 GitHub 用户名
         admin: ['Zyleiver'],  // 管理员的 GitHub 用户名
-        id: MD5(location.pathname),  // 根据页面路径生成唯一 ID
+        id: location.pathname,  // 根据页面路径生成唯一 ID
         distractionFreeMode: false  // 不启用安静模式
       });
       gitalk.render('gitalk-container');
