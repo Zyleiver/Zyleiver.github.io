@@ -39,6 +39,24 @@ nav ul li a {
   font-size: 16px;
 }
 
+
+.centered-title {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+
+#gitalk-container {
+  padding: 0 10%; /* 为Gitalk容器添加内边距 */
+}
+
 .hero {
   text-align: center;
   padding: 100px 20px;

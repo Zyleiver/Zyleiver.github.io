@@ -21,25 +21,26 @@
     </header>
     <main>
         <section class="content">
-            <h1>留言板</h1>
+            <h1 class="centered-title">留言板</h1>
             <div id="gitalk-container"></div>
         </section>
+            <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+            <script>
+            var gitalk = new Gitalk({
+                clientID: 'Ov23lirEXuJButtQg1oz',
+                clientSecret: 'fb04db2a2e52533264d6c3c1b92147ca4c8e33e3',
+                repo: 'Zyleiver.github.io',  // 存储留言的 GitHub 仓库
+                owner: 'Zyleiver',  // GitHub 用户名
+                admin: ['Zyleiver'],  // 管理员的 GitHub 用户名
+                id: location.pathname,  // 根据页面路径生成唯一 ID
+                distractionFreeMode: false  // 不启用安静模式
+            });
+            gitalk.render('gitalk-container');
+            </script>
     </main>
     <footer>
         <p>&copy; 2024 Zyleiver的个人网站. 保留所有权利.</p>
     </footer>
-    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-    <script>
-      var gitalk = new Gitalk({
-        clientID: 'Ov23lirEXuJButtQg1oz',
-        clientSecret: 'fb04db2a2e52533264d6c3c1b92147ca4c8e33e3',
-        repo: 'Zyleiver.github.io',  // 存储留言的 GitHub 仓库
-        owner: 'Zyleiver',  // GitHub 用户名
-        admin: ['Zyleiver'],  // 管理员的 GitHub 用户名
-        id: location.pathname,  // 根据页面路径生成唯一 ID
-        distractionFreeMode: false  // 不启用安静模式
-      });
-      gitalk.render('gitalk-container');
-    </script>
+
 </body>
 </html>
