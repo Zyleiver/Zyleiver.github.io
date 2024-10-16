@@ -33,10 +33,10 @@
       var gitalk = new Gitalk({
         clientID: 'Ov23lirEXuJButtQg1oz',
         clientSecret: 'fb04db2a2e52533264d6c3c1b92147ca4c8e33e3',
-        repo: 'https://zyleiver.com',  // 存储留言的 GitHub 仓库
+        repo: 'message',  // 存储留言的 GitHub 仓库
         owner: 'Zyleiver',  // 你的 GitHub 用户名
         admin: ['Zyleiver'],  // 管理员的 GitHub 用户名
-        id: location.pathname,  // 根据页面路径生成唯一 ID
+        id: MD5(location.pathname),  // 根据页面路径生成唯一 ID
         distractionFreeMode: false  // 不启用安静模式
       });
       gitalk.render('gitalk-container');
