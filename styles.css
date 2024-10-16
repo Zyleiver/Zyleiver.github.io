@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'AlimamaShuHeiTi';
+  src: url('./fonts/AlimamaShuHeiTi-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  background: linear-gradient(to right, #e0f7fa, #80deea);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(to right, #f0f0f0, #d0d0d0);
+  font-family: 'AlimamaShuHeiTi', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
@@ -10,6 +17,7 @@ header {
   background-color: #fff;
   border-bottom: 1px solid #e0e0e0;
   padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -38,39 +46,36 @@ nav ul li a {
   margin: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
 }
 
 .hero h1 {
   font-size: 48px;
   margin-bottom: 20px;
+  color: #333;
 }
 
 .hero p {
   font-size: 18px;
   margin-bottom: 30px;
+  color: #666;
 }
 
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007aff;
+  background-color: #333;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .btn:hover {
-  background-color: #005bb5;
-}
-
-.content {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #fff;
-  margin: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #555;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -79,4 +84,6 @@ footer {
   background-color: #fff;
   border-top: 1px solid #e0e0e0;
   margin-top: 20px;
+  color: #666;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
